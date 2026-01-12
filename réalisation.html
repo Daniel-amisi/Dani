@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eglise NewLife Kinshasa">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="Image/images (2).jpeg">
+    <title>Mub Architecture</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        section { padding: 2rem; max-width: 1100px; margin: 0 auto; }
+        h2 { color: #444; border-left: 5px solid #007acc; padding-left: 0.5rem; margin-top: 2rem; }
+        p { line-height: 1.6; }
+        ul { list-style: disc; padding-left: 1.2rem; }
+        .card { background: white; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        footer { background: #222; color: #ccc; padding: 1rem; text-align: center; font-size: 0.9rem; }
+        @media (max-width: 768px) { header h1 { font-size: 1.5rem; } }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+
+
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="image/mad/AZQSDFGH_1 - Photo.jpg" alt="Logo">
+        </a>
+
+        <button id="menu-toggle-button" class="fas"></button>
+
+        <ul class="nav-menu" id="nav-menu">
+      
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="réalisation.html">Réalisation</a></li>
+            
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- 
+<div class="background-realisations">
+  <div class="texte-realisations-centre">
+    <h1 class="titre-nos-realisations">Nos Réalisations qualifiées</h1>
+   
+  </div>
+</div> -->
+
+
+ <div class="portfolio-container">
+    <div class="project" id="project-display">
+      <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="Projet 1">
+      <div class="overlay">
+        <!-- <h2>Projet 1</h2>
+        <p>Description du projet 1. Une brève présentation de ce que le projet réalise.</p> -->
+      </div>
+    </div>
+    <div class="nav-arrow nav-left" onclick="prevProject()">&#10094;</div>
+    <div class="nav-arrow nav-right" onclick="nextProject()">&#10095;</div>
+  </div>
+
+  <!-- portfolio -->
+<script>
+    const projects = [
+       {
+        img: "image/mad/1_1 - Photo.jpg",
+        title: "Projet 1",
+        desc: "Description du projet 1. Une brève présentation de ce que le projet réalise."
+      },
+      {
+        img: "image/mad/render 123_2 - Photo.jpg",
+        title: "Projet 2",
+        desc: "Description du projet 2. Explication de ses objectifs et réalisations."
+      },
+      {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+       {
+        img: "image/mad/454648_4 - Photo.jpg",
+        title: "Projet 3",
+        desc: "Description du projet 3. Détails techniques et technologies utilisées."
+      },
+    ];
+
+   
+    let index = 0;
+    const display = document.getElementById("project-display");
+
+    function updateProject() {
+      const project = projects[index];
+      display.innerHTML = `
+        <img src="${project.img}" alt="${project.title}">
+        <div class="overlay">
+          <h2>${project.title}</h2>
+          <p>${project.desc}</p>
+        </div>
+      `;
+    }
+
+    function nextProject() {
+      index = (index + 1) % projects.length;
+      updateProject();
+    }
+
+    function prevProject() {
+      index = (index - 1 + projects.length) % projects.length;
+      updateProject();
+    }
+
+    // Démarrer le diaporama automatique toutes les 5 secondes
+    setInterval(nextProject, 5000);
+  </script>
+
+
+
+  <div class="realisations-container">
+    <!-- Réalisations visibles dès le départ -->
+    <div class="realisation-box">
+      <img src="image/mad/1234_1 - Photo_5 - Photo.jpg" alt="Hôpitaux HJ">
+      <div class="realisation-content">
+        <h3>HÔPITAUX HJ</h3>
+        <p>HJ Hospitals, l'un des meilleurs hôpitaux de Kinshasa qui traite plus de 20 spécialités...</p>
+        <a href="#">Contactez-nous</a>
+      </div>
+    </div>
+
+    <div class="realisation-box">
+      <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="Hôtel Hilton">
+      <div class="realisation-content">
+        <h3>HÔTEL HILTON</h3>
+        <p>Vivez l'élégance et le raffinement à Hilton Kinshasa, votre oasis de luxe au cœur de la ville !...</p>
+        <a href="#">Contactez-nous</a>
+      </div>
+    </div>
+
+    <div class="realisation-box">
+      <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="Hôtel Hilton">
+      <div class="realisation-content">
+        <h3>HÔTEL HILTON</h3>
+        <p>Vivez l'élégance et le raffinement à Hilton Kinshasa, votre oasis de luxe au cœur de la ville !...</p>
+        <a href="#">Contactez-nous</a>
+      </div>
+    </div>
+
+    <div class="realisation-box">
+      <img src="image/mad/AAAAA_1 - Photo.jpg" alt="Hôtel Hilton">
+      <div class="realisation-content">
+        <h3>HÔTEL HILTON</h3>
+        <p>Vivez l'élégance et le raffinement à Hilton Kinshasa, votre oasis de luxe au cœur de la ville !...</p>
+        <a href="#">Contactez-nous</a>
+      </div>
+    </div>
+
+    <!-- Réalisations masquées -->
+    <div class="realisation-hidden" style="display: none;">
+      <div class="realisation-box">
+        <img src="image/mad/123ER_4 - Photo.jpg" alt="Hôpital Mama Yemo">
+        <div class="realisation-content">
+          <h3>HÔPITAL MAMA YEMO</h3>
+          <p>L'Hôpital général de Kinshasa est un centre de soins de santé publique...</p>
+          <a href="#">Contactez-nous</a>
+        </div>
+      </div>
+
+      <div class="realisation-box">
+        <img src="image/mad/render 123_3 - Photo.jpg" alt="Supreme Automobile">
+        <div class="realisation-content">
+          <h3>SUPREME AUTOMOBILE RDC</h3>
+          <p>Usine de carrosserie automobile et atelier de service...</p>
+          <a href="#">Contactez-nous</a>
+        </div>
+      </div>
+
+      <div class="realisation-box">
+        <img src="image/mad/123ER_4 - Photo.jpg" alt="Supreme Automobile 2">
+        <div class="realisation-content">
+          <h3>SUPREME AUTOMOBILE RDC</h3>
+          <p>Usine de carrosserie automobile et atelier de service...</p>
+          <a href="#">Contactez-nous</a>
+        </div>
+      </div>
+
+      <div class="realisation-box">
+        <img src="image/mad/454648_3 - Photo.jpg" alt="Autre projet">
+        <div class="realisation-content">
+          <h3>AUTRE PROJET</h3>
+          <p>Description d’un autre projet ici...</p>
+          <a href="#">Contactez-nous</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <button id="voirPlusBtn">Voir plus</button>
+  </div>
+</section>
+
+
+
+<script>
+  document.getElementById("voirPlusBtn").addEventListener("click", function () {
+    const hiddenContainer = document.querySelector(".realisation-hidden");
+    hiddenContainer.style.display = "flex";
+
+    // Relancer l'animation sur chaque .realisation-box ajoutée
+    const newBoxes = hiddenContainer.querySelectorAll(".realisation-box");
+    newBoxes.forEach((box, index) => {
+      box.style.animation = "none"; // reset animation
+      void box.offsetWidth; // reflow trick
+      box.style.animation = `danceIn 0.8s ease-out forwards`;
+      box.style.animationDelay = `${(index + 1) * 0.2}s`;
+    });
+
+    this.style.display = "none"; // cacher le bouton
+  });
+</script>
+
+
+
+
+    <!-- <main>
+       <section class="realisations"></section>
+       
+       <div class="galerie">
+        <div class="projet">
+            <img src="image/image_004-0be626d1.jpeg" alt="Résidence Kikwit">
+            <h3>Réidence Kikwit</h3>
+            <p><strong>Lieu :</strong>Kinshasa <br>
+            <strong>Année :</strong>2024 <br>
+            <strong>Type :</strong>Maison moderne <br>
+           Maison à deux niveaux avec finitions haut de gamme et de gamme et ventilation naturelle optimisée.</p>
+        </div>
+
+        <div class="projet">
+            <img src="image/image_018-396980df.jpeg" alt="Immeuble Gombe">
+            <h3>Immeuble Gombe</h3>
+            <p><strong>Lieu :</strong>Gombe, Kinshasa <br>
+            <strong>Année :</strong>2023 <br>
+            <strong>Type :</strong>Immeuble commercial <br>
+           Conception et suivi d'un immeuble de 6 étages à usage mixte.</p>
+        </div>
+
+        <div class="projet">
+  <img src="image/P1780219_1-nano_2-440993b6.jpeg" alt="Résidence Mont Ngafula">
+  <h3>Résidence Mont Ngafula</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2022 <br>
+  <strong>Type :</strong>Villa résidentielle <br>
+  Conception d'une villa spacieuse avec piscine et jardin paysager.</p>
+</div>
+
+<div class="projet">
+  <img src="image/image_001-0324c7df.jpeg" alt="Bureau Mabanga">
+  <h3>Bureau Mabanga</h3>
+  <p><strong>Lieu :</strong>Goma <br>
+  <strong>Année :</strong>2024 <br>
+  <strong>Type :</strong>Bureau <br>
+  Espace de coworking moderne avec finitions industrielles.</p>
+</div>
+
+<div class="projet">
+  <img src="image/image_010-aa79a415.jpeg" alt="Boutique Chic Store">
+  <h3>Boutique Chic Store</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2023 <br>
+  <strong>Type :</strong>Commerce <br>
+  Aménagement intérieur d’une boutique de prêt-à-porter haut de gamme.</p>
+</div>
+
+<div class="projet">
+  <img src="image/image_019-e12a220e.jpeg" alt="Maison Lukunga">
+  <h3>Maison Lukunga</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2021 <br>
+  <strong>Type :</strong>Résidentiel <br>
+  Construction d’une maison en duplex pour une famille de 6 personnes.</p>
+</div>
+
+<div class="projet">
+  <img src="image/images.jpeg" alt="Clinique Bon Berger">
+  <h3>Clinique Bon Berger</h3>
+  <p><strong>Lieu :</strong>Matete <br>
+  <strong>Année :</strong>2024 <br>
+  <strong>Type :</strong>Clinique <br>
+  Rénovation complète et modernisation d’un centre médical local.</p>
+</div>
+
+<div class="projet">
+  <img src="image/P1780219_1-nano_2-440993b6.jpeg" alt="Appartement Tshangu">
+  <h3>Appartement Tshangu</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2022 <br>
+  <strong>Type :</strong>Logement collectif <br>
+  8 appartements avec accès commun et parking intégré.</p>
+</div>
+
+<div class="projet">
+  <img src="image/P2690310_1-nano_2-2e475ba2.jpeg" alt="Villa Ngaliema">
+  <h3>Villa Ngaliema</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2021 <br>
+  <strong>Type :</strong>Villa de luxe <br>
+  Design contemporain avec piscine à débordement et terrasse.</p>
+</div>
+
+<div class="projet">
+  <img src="image/image_004-0be626d1.jpeg" alt="École Lumumba">
+  <h3>École Lumumba</h3>
+  <p><strong>Lieu :</strong>Lubumbashi <br>
+  <strong>Année :</strong>2023 <br>
+  <strong>Type :</strong>Établissement scolaire <br>
+  Conception d’un complexe éducatif avec 12 salles de classe.</p>
+</div>
+
+<div class="projet">
+  <img src="image/mad/1_2 - Photo.jpg" alt="Centre culturel Ndolo">
+
+<h3>Centre culturel Ndolo</h3>
+  <p><strong>Lieu :</strong>Ndolo <br>
+  <strong>Année :</strong>2024 <br>
+  <strong>Type :</strong>Centre communautaire <br>
+  Espace polyvalent pour événements artistiques et culturels.</p>
+</div>
+
+<div class="projet">
+  <img src="image/image_015-3cdfd0b8.jpeg" alt="Maison Itimbiri">
+  <h3>Maison Itimbiri</h3>
+  <p><strong>Lieu :</strong>Kisangani <br>
+  <strong>Année :</strong>2023 <br>
+  <strong>Type :</strong>Résidentiel <br>
+  Maison de style tropical avec cour intérieure ventilée.</p>
+</div>
+
+<div class="projet">
+  <img src="image/Dompierre-nano-7129059c.jpeg" alt="Salon coiffure Prestige">
+  <h3>Salon coiffure Prestige</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2022 <br>
+  <strong>Type :</strong>Commercial <br>
+  Aménagement complet avec postes de coiffure design et lumière naturelle.</p>
+</div>
+
+<div class="projet">
+  <img src="image/P3820423_1-nano_4-5944f000.jpeg" alt="Immeuble Kasavubu">
+  <h3>Immeuble Kasavubu</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2023 <br>
+  <strong>Type :</strong>Immeuble mixte <br>
+  10 étages de logements + espaces commerciaux au rez-de-chaussée.</p>
+</div>
+
+<div class="projet">
+  <img src="image/P1870228_1-nano_2-61f9fdac.jpeg" alt="Maison Kitambo">
+  <h3>Maison Kitambo</h3>
+
+<p><strong>Lieu :</strong>Kitambo <br>
+  <strong>Année :</strong>2024 <br>
+  <strong>Type :</strong>Maison individuelle <br>
+  Architecture minimaliste avec grande baie vitrée côté jardin.</p>
+</div>
+
+<div class="projet">
+  <img src="image//mad/AZQSDFGH_5 - Photo.jpg" alt="Studio Design Cité U">
+  <h3>Studio Design Cité U</h3>
+  <p><strong>Lieu :</strong>Kinshasa <br>
+  <strong>Année :</strong>2022 <br>
+  <strong>Type :</strong>Studio étudiant <br>
+  Optimisation de l’espace pour vie étudiante avec mobilier intégré.</p>
+</div>
+
+<div class="projet">
+  <img src="image/mad/1234_1 - Photo_2 - Photo.jpg" alt="Maison Kisenso">
+  <h3>Maison Kisenso</h3>
+  <p><strong>Lieu :</strong>Kisenso <br>
+  <strong>Année :</strong>2023 <br>
+  <strong>Type :</strong>Maison duplex <br>
+  Plan moderne avec mezzanine et cour intérieure ombragée.</p>
+</div>
+
+       </div>
+    </main> -->
+
+    <!-- Footer -->
+  <footer class="footer-modern">
+  <div class="footer-container">
+
+    <div class="footer-logo-section">
+      <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="LAD Architecture" class="footer-logo" />
+      <p>
+        LAD Architecture, acteur majeur de la construction et de l'aménagement en RDC, bénéficie d'une expérience de plus de 10 ans. Nous redéfinissons les standards de qualité à Kinshasa et à travers le pays.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Liens</h4>
+      <a href="about.html">À propos</a>
+      <a href="service.html">Services</a>
+      <a href="projet.html">Projets</a>
+      <a href="réalisation.html">Réalisations</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Réalisations</h4>
+      <a href="#">HÔPITAUX HJ</a>
+      <a href="#">HÔTEL HILTON</a>
+      <a href="#">HÔPITAL MAMA YEMO</a>
+      <a href="#">SUPREME AUTOMOBILE</a>
+      <a href="#">CENTRE CONCO</a>
+      <a href="#">ROUTE KINSHASA</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Projets</h4>
+      <a href="#">La Cité-Jardin</a>
+      <a href="#">RÉSIDENCE PALM</a>
+      <a href="#">SKY 180</a>
+      <a href="#">La Grande Résidence</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +243 979 143 408</p>
+      <p><i class="fas fa-envelope"></i> danielamisi@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 LAD Architecture. Tous droits réservés.</p>
+  </div>
+
+</footer>
+
+<!-- Bouton WhatsApp -->
+<a href="https://wa.me/243979143408?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations" class="whatsapp-float" target="_blank" aria-label="Contact WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("menu-toggle-button");
+    const navMenu = document.getElementById("nav-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      toggleBtn.classList.toggle("close-icon");
+    });
+  });
+</script>
+
+    <!-- Scroll top -->
+    <button id="scrollToTopBtn" class="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

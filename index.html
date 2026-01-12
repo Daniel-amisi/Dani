@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eglise NewLife Kinshasa">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="Image/images (2).jpeg">
+    <title>Mub Architecture</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #222;
+    }
+
+    /* === HERO VIDÉO === */
+    .Damas-hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .Damas-hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .Damas-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .Damas-overlay h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1s ease;
+    }
+    .Damas-overlay p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* === SWIPER SLIDER === */
+    .Damas-slider {
+      padding: 60px 20px;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    .swiper {
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .slide-content {
+      padding: 15px;
+    }
+    .slide-content h3 {
+      margin: 0;
+      color: #ff5e62;
+    }
+
+    /* === MAD AUJOURD'HUI === */
+    .Damas-intro {
+      padding: 60px 20px;
+      background: #fff;
+      text-align: center;
+    }
+    .Damas-intro h2 {
+      font-size: 2rem;
+      color: #ff5e62;
+      margin-bottom: 20px;
+    }
+    .Damas-intro p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+
+    /* === WHATSAPP FLOAT === */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 50px; height: 50px;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      font-size: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="image/mad/AZQSDFGH_1 - Photo.jpg" alt="Logo">
+        </a>
+
+        <button id="menu-toggle-button" class="fas"></button>
+
+        <ul class="nav-menu" id="nav-menu">
+        
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="réalisation.html">Réalisation</a></li>
+            
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+  <!-- HERO VIDÉO -->
+  <section class="Damas-hero">
+    
+    <video autoplay muted loop playsinline>
+      <source src="image/mad/WhatsApp Vidéo 2025-07-03 à 21.33.36_18a3178b.mp4" type="video/mp4">
+    </video>
+    <div class="Damas-overlay">
+      <h1>L’architecture qui change le paysage</h1>
+      <p>MAD vous accompagne dans la création d’espaces modernes, esthétiques et durables à Kinshasa et au-delà.</p>
+    </div>
+  </section>
+
+  <!-- SLIDER SWIPER -->
+  <!-- <section class="Damas-slider">
+    <h2>Nos Réalisations Récentes</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <img src="image/mad/1234_1 - Photo_2 - Photo.jpg" alt="Projet 1" />
+          <div class="slide-content">
+            <h3>HÔPITAUX HJ</h3>
+            <p>22309, Boulevard Lumumba | 2016</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="image/mad/1_1 - Photo.jpg" alt="Projet 2" />
+          <div class="slide-content">
+            <h3>HÔTEL HILTON</h3>
+            <p>Wagenia, Kinshasa | 2023</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="image/mad/1_2 - Photo.jpg" alt="Projet 3" />
+          <div class="slide-content">
+            <h3>MAMA YEMO</h3>
+            <p>Avenue de l’Hôpital | 2023</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="image/mad/454648_4 - Photo.jpg" alt="Projet 4" />
+          <div class="slide-content">
+            <h3>SUPREME AUTO</h3>
+            <p>12e Rue Limete | 2021</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="image/mad/AZQSDFGH_5 - Photo.jpg" alt="Projet 5" />
+          <div class="slide-content">
+            <h3>CENTRE CONCO</h3>
+            <p>Avenue Wagenia | 2021</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+  <!-- INTRODUCTION MAD -->
+  <section class="Damas-intro">
+    <h2>MAD aujourd’hui</h2>
+    <p>
+      Forts d’une expertise reconnue, nous accompagnons nos clients de la conception à la réalisation de leurs projets architecturaux à Kinshasa, Bukavu, et au-delà. Notre engagement : créativité, rigueur, et excellence.
+    </p>
+  </section>
+
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/243979143408" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      centeredSlides: true,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }
+    });
+  </script>
+
+
+<section class="Damas-vision">
+  <div class="Damas-vision-overlay">
+    <h2>Notre Vision 2030</h2>
+    <p>MAD ambitionne de devenir une référence africaine dans la conception d’espaces verts, intelligents, durables et connectés. Nous façonnons les villes de demain avec audace et responsabilité.</p>
+  </div>
+</section>
+
+<style>
+  .Damas-vision {
+    background: url('image/mad/123ER_6\ -\ Photo.jpg') center/cover fixed;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .Damas-vision-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 60px 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+  }
+  .Damas-vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffb17a;
+  }
+</style>
+
+
+
+
+
+<section class="Damas-timeline">
+  <h2>Notre parcours architectural</h2>
+  <div class="Damas-timeline-container">
+    <div class="Damas-timeline-item">
+      <span class="Damas-date">2016</span>
+      <div class="Damas-content">
+        <h4>HJ Hôpitaux</h4>
+        <p>Kintambo, Kinshasa</p>
+      </div>
+    </div>
+    <div class="Damas-timeline-item">
+      <span class="Damas-date">2021</span>
+      <div class="Damas-content">
+        <h4>Centre CONCO</h4>
+        <p>Wagenia, Kinshasa</p>
+      </div>
+    </div>
+    <div class="Damas-timeline-item">
+      <span class="Damas-date">2023</span>
+      <div class="Damas-content">
+        <h4>Hôtel Hilton</h4>
+        <p>Gombe, Kinshasa</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .Damas-timeline {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .Damas-timeline h2 {
+    color: #21105f;
+    margin-bottom: 40px;
+  }
+  .Damas-timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    padding-left: 30px;
+  }
+  .Damas-timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ff5e62;
+  }
+  .Damas-timeline-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+  }
+  .Damas-date {
+    font-weight: bold;
+    color: #ff5e62;
+    background: #fff;
+    border: 2px solid #ff5e62;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    z-index: 2;
+  }
+  .Damas-content {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    flex: 1;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Footer -->
+ <footer class="footer-modern">
+  <div class="footer-container">
+
+    <div class="footer-logo-section">
+      <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="LAD Architecture" class="footer-logo" />
+      <p>
+        LAD Architecture, acteur majeur de la construction et de l'aménagement en RDC, bénéficie d'une expérience de plus de 10 ans. Nous redéfinissons les standards de qualité à Kinshasa et à travers le pays.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Liens</h4>
+      <a href="about.html">À propos</a>
+      <a href="service.html">Services</a>
+      <a href="projet.html">Projets</a>
+      <a href="réalisation.html">Réalisations</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Réalisations</h4>
+      <a href="#">HÔPITAUX HJ</a>
+      <a href="#">HÔTEL HILTON</a>
+      <a href="#">HÔPITAL MAMA YEMO</a>
+      <a href="#">SUPREME AUTOMOBILE</a>
+      <a href="#">CENTRE CONCO</a>
+      <a href="#">ROUTE KINSHASA</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Projets</h4>
+      <a href="#">La Cité-Jardin</a>
+      <a href="#">RÉSIDENCE PALM</a>
+      <a href="#">SKY 180</a>
+      <a href="#">La Grande Résidence</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +243 979 143 408</p>
+      <p><i class="fas fa-envelope"></i> danielamisi@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 LAD Architecture. Tous droits réservés.</p>
+  </div>
+
+</footer>
+
+
+
+<style>
+  
+  .footer-modern {
+  background: #061d3a;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 50px 20px 20px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo-section {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* rend l'image ronde */
+  border: 3px solid #f90; /* facultatif : bordure orange */
+}
+
+
+.footer-logo-section p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-socials {
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  color: #f90;
+  margin-right: 12px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+}
+
+.footer-links,
+.footer-contact {
+  flex: 1 1 160px;
+  min-width: 150px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  color: #f90;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ddd;
+  margin-bottom: 6px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* WhatsApp bouton flottant */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    max-width: 300px;
+  }
+
+  .footer-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-socials {
+    gap: 10px;
+  }
+}
+
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("menu-toggle-button");
+    const navMenu = document.getElementById("nav-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      toggleBtn.classList.toggle("close-icon");
+    });
+  });
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

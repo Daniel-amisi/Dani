@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAD - Moderne Architecture Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #fff; color: #333; }
+
+    .Damas-header {
+      background: linear-gradient(to right, #ff7b00, #ff5c5c);
+      padding: 60px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .Damas-header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .Damas-header p {
+      font-size: 1.2rem;
+    }
+
+    .Damas-section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .Damas-section h2 {
+      font-size: 2rem;
+      color: #ff5e62;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .Damas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .Damas-card {
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      overflow: hidden;
+    }
+
+    .Damas-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .Damas-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .Damas-card .Damas-content {
+      padding: 15px;
+    }
+
+    .Damas-content h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .Damas-content p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .Damas-contact {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .Damas-contact a {
+      color: #ff914d;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .Damas-header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="Damas-header">
+    <h1>MAD</h1>
+    <p>WE BUILD YOUR DREAMS</p>
+  </header>
+
+  <section class="Damas-section">
+    <h2>Qui sommes-nous ?</h2>
+    <p style="text-align: center; max-width: 900px; margin: auto;">
+      Moderne Architecture Design (MAD) est une société d’architecture et de design basée à Kinshasa, fondée par deux passionnés : Shukuru MUBALAMA Dieum & Édouard MUTAYONGWA Santos. Nous concevons des espaces modernes, esthétiques et fonctionnels.
+    </p>
+  </section>
+
+  <section class="Damas-section">
+    <h2>Nos Services</h2>
+    <div class="Damas-grid">
+      <div class="Damas-card">
+        <div class="Damas-content">
+          <h3>Conception et gestion de projets</h3>
+        </div>
+      </div>
+      <div class="Damas-card">
+        <div class="Damas-content">
+          <h3>Design intérieur et extérieur</h3>
+        </div>
+      </div>
+      <div class="Damas-card">
+        <div class="Damas-content">
+          <h3>Construction & supervision</h3>
+        </div>
+      </div>
+      <div class="Damas-card">
+        <div class="Damas-content">
+          <h3>Vente de matériaux</h3>
+        </div>
+      </div>
+      <div class="Damas-card">
+        <div class="Damas-content">
+          <h3>Formation & consultation</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Damas-section">
+    <h2>Quelques Réalisations</h2>
+    <div class="Damas-grid">
+      <div class="Damas-card">
+        <img src="image/mad/1234_1 - Photo_2 - Photo.jpg" alt="Projet 1">
+        <div class="Damas-content">
+          <h3>Immeuble R+4 - Kintambo</h3>
+          <p>P01 - Commune de Kintambo / OUA N°18</p>
+        </div>
+      </div>
+      <div class="Damas-card">
+        <img src="image/mad/1_3 - Photo.jpg" alt="Projet 2">
+        <div class="Damas-content">
+          <h3>Villa R+3 - Nsele</h3>
+          <p>P02 - Commune de Nsele / Qrt FT</p>
+        </div>
+      </div>
+      <div class="Damas-card">
+        <img src="image/mad/123ER_6 - Photo.jpg" alt="Projet 3">
+        <div class="Damas-content">
+          <h3>Villa plain-pied - Plazza</h3>
+          <p>P09 - Nsele / Qrt Plazza</p>
+        </div>
+      </div>
+      <div class="Damas-card">
+        <img src="image/mad/AZQSDFGH_3 - Photo.jpg" alt="Projet 4">
+        <div class="Damas-content">
+          <h3>Immeuble R+4 - Lingwala</h3>
+          <p>P10 - Commune de Lingwala</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="Damas-contact">
+    <h2>Contact</h2>
+    <p>Tél : <a href="tel:+243998365200">+243 998 365 200</a> / <a href="tel:+243977653656">+243 977 653 656</a></p>
+    <p>Email : <a href="mailto:madsarl07@gmail.com">madsarl07@gmail.com</a></p>
+    <p>Adresse : Kintambo, Kinshasa, RDC</p>
+  </footer>
+
+</body>
+</html>

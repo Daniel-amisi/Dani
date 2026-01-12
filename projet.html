@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eglise NewLife Kinshasa">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons and CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="Image/images (2).jpeg">
+    <title>Mub Architecture</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        section { padding: 2rem; max-width: 1100px; margin: 0 auto; }
+        h2 { color: #444; border-left: 5px solid #007acc; padding-left: 0.5rem; margin-top: 2rem; }
+        p { line-height: 1.6; }
+        ul { list-style: disc; padding-left: 1.2rem; }
+        .card { background: white; padding: 1.5rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        footer { background: #222; color: #ccc; padding: 1rem; text-align: center; font-size: 0.9rem; }
+        @media (max-width: 768px) { header h1 { font-size: 1.5rem; } }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+   
+   
+
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="image/mad/AZQSDFGH_1 - Photo.jpg" alt="Logo">
+        </a>
+
+        <button id="menu-toggle-button" class="fas"></button>
+
+        <ul class="nav-menu" id="nav-menu">
+      
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="réalisation.html">Réalisation</a></li>
+         
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+ 
+<div class="background-projets">
+  <div class="texte-projets-centre">
+    <h1 class="titre-nos-projets">Nos Projets qualifiés</h1>
+    <!-- <p class="slogan-nos-projets">Des solutions efficaces, modernes et sur mesure.</p> -->
+  </div>
+</div>
+
+ <main>
+  
+  <section class="projects-header">
+    <!-- <h1>Nos Projets</h1> -->
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Rechercher un projet..."
+        onkeyup="filterProjects()"
+        aria-label="Rechercher un projet"
+      />
+    </div>
+  </section>
+
+
+<div class="projects-container">
+    <div class="project-box" data-project="cite-jardin">
+      <img src="image/mad/1234_1 - Photo_2 - Photo.jpg" alt="Cité Jardin Kinshasa">
+      <div class="project-content">
+        <h3>La Cité-Jardin de Kinshasa</h3>
+        <p>Cité-Jardin de kinshasa LOGEMENT ABORDABLE ENTRE SPORT ET NATURE</p>
+        <a href="#" class="open-modal-btn">Voir le projet</a>
+      </div>
+    </div>
+
+    <div class="project-box" data-project="residence-palm">
+      <img src="image/mad/123ER_4 - Photo.jpg" alt="Résidence Palm">
+      <div class="project-content">
+        <h3>RÉSIDENCE PALM</h3>
+        <p>Le luxe au-delà de l'horizon</p>
+        <a href="#" class="open-modal-btn">Voir le projet</a>
+      </div>
+    </div>
+
+    <div class="project-box" data-project="sky-180">
+      <img src="image/mad/1_1 - Photo.jpg" alt="SKY 180">
+      <div class="project-content">
+        <h3>SKY 180</h3>
+        <p>Bienvenue à SKY 180, un monde où le raffinement rencontre le confort</p>
+        <a href="#" class="open-modal-btn">Voir le projet</a>
+      </div>
+    </div>
+
+    <div class="project-box" data-project="grande-residence">
+      <img src="image/mad/454648_3 - Photo.jpg" alt="La Grande Résidence">
+      <div class="project-content">
+        <h3>La Grande Résidence</h3>
+        <p>Plongez dans l'expérience exclusive du style de vie que nous vous réservons à The Grand Residence RDC</p>
+        <a href="#" class="open-modal-btn">Voir le projet</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modale (sera complétée avec le script plus tard) -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <span class="close-btn" aria-label="Fermer">&times;</span>
+      <h2 id="modalTitle">Titre du projet</h2>
+      <div class="tabs">
+        <button class="tab-button active" data-tab="photos">Voir les photos</button>
+        <button class="tab-button" data-tab="videos">Regarder des vidéos</button>
+      </div>
+      <div id="photos" class="tab-content active">
+        <div class="gallery" id="gallery"></div>
+      </div>
+      <div id="videos" class="tab-content">
+        <div class="video-list" id="videoList"></div>
+      </div>
+    </div>
+  </div>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img id="lightboxImg" src="" alt="Agrandissement">
+</div>
+
+ </main>
+
+
+<script>
+  // Données projets avec images & vidéos
+  const projectsData = {
+    'cite-jardin': {
+      title: 'La Cité-Jardin de Kinshasa',
+      photos: [
+        'image/mad/1234_1 - Photo_2 - Photo.jpg',
+        'image/mad/1_1 - Photo.jpg',
+        'img/cite-jardin3.jpg'
+      ],
+      videos: [
+        'image/mad/Video moses 123.mp4',
+        'videos/cite-jardin-video2.mp4'
+      ]
+    },
+    'residence-palm': {
+      title: 'RÉSIDENCE PALM',
+      photos: ['img/residence-palm.jpg'],
+      videos: []
+    },
+    'sky-180': {
+      title: 'SKY 180',
+      photos: ['img/sky180.jpg'],
+      videos: []
+    },
+    'grande-residence': {
+      title: 'La Grande Résidence',
+      photos: ['img/grande-residence.jpg'],
+      videos: []
+    }
+  };
+
+  const modal = document.getElementById('projectModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const gallery = document.getElementById('gallery');
+  const videoList = document.getElementById('videoList');
+  const closeBtn = modal.querySelector('.close-btn');
+  const tabButtons = modal.querySelectorAll('.tab-button');
+  const tabContents = modal.querySelectorAll('.tab-content');
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  // Ouvre la modale avec le projet sélectionné
+  document.querySelectorAll('.open-modal-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const projectBox = btn.closest('.project-box');
+      const projectKey = projectBox.dataset.project;
+      const project = projectsData[projectKey];
+      if (!project) return;
+
+      modalTitle.textContent = project.title;
+
+      // Remplir galerie photos
+      gallery.innerHTML = '';
+      project.photos.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = project.title;
+        img.style.width = '100%';
+        img.style.marginBottom = '10px';
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+          lightboxImg.src = src;
+          lightbox.style.display = 'flex';
+        });
+        gallery.appendChild(img);
+      });
+
+      // Remplir vidéos
+      videoList.innerHTML = '';
+      project.videos.forEach(src => {
+        const video = document.createElement('video');
+        video.src = src;
+        video.controls = true;
+        video.style.width = '100%';
+        video.style.marginBottom = '10px';
+        videoList.appendChild(video);
+      });
+
+      // Afficher la modale
+      modal.style.display = 'block';
+      modal.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  // Fermer la modale
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+  });
+
+  // Fermer modale en cliquant en dehors
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+  });
+
+  // Fermer lightbox avec bouton
+  lightboxClose.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+  });
+
+  // Gérer le switch onglets photos / vidéos
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetTab = button.dataset.tab;
+
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      button.classList.add('active');
+      document.getElementById(targetTab).classList.add('active');
+    });
+  });
+</script>
+    <!-- Footer -->
+    <footer class="footer-modern">
+  <div class="footer-container">
+
+    <div class="footer-logo-section">
+      <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="LAD Architecture" class="footer-logo" />
+      <p>
+        LAD Architecture, acteur majeur de la construction et de l'aménagement en RDC, bénéficie d'une expérience de plus de 10 ans. Nous redéfinissons les standards de qualité à Kinshasa et à travers le pays.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Liens</h4>
+      <a href="about.html">À propos</a>
+      <a href="service.html">Services</a>
+      <a href="projet.html">Projets</a>
+      <a href="réalisation.html">Réalisations</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Réalisations</h4>
+      <a href="#">HÔPITAUX HJ</a>
+      <a href="#">HÔTEL HILTON</a>
+      <a href="#">HÔPITAL MAMA YEMO</a>
+      <a href="#">SUPREME AUTOMOBILE</a>
+      <a href="#">CENTRE CONCO</a>
+      <a href="#">ROUTE KINSHASA</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Projets</h4>
+      <a href="#">La Cité-Jardin</a>
+      <a href="#">RÉSIDENCE PALM</a>
+      <a href="#">SKY 180</a>
+      <a href="#">La Grande Résidence</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +243 979 143 408</p>
+      <p><i class="fas fa-envelope"></i> danielamisi@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 LAD Architecture. Tous droits réservés.</p>
+  </div>
+
+</footer>
+
+
+
+<!-- Bouton WhatsApp -->
+<a href="https://wa.me/243979143408?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations" class="whatsapp-float" target="_blank" aria-label="Contact WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("menu-toggle-button");
+    const navMenu = document.getElementById("nav-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      toggleBtn.classList.toggle("close-icon");
+    });
+  });
+</script>
+
+    <!-- Scroll top -->
+    <button id="scrollToTopBtn" class="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

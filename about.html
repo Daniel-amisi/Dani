@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eglise NewLife Kinshasa">
+    <title>Mub Architecture</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons and CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="image/mad/AZQSDFGH_1 - Photo.jpg" alt="Logo">
+        </a>
+
+        <button id="menu-toggle-button" class="fas"></button>
+
+        <ul class="nav-menu" id="nav-menu">
+        
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="réalisation.html">Réalisation</a></li>
+            
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<div class="login-modal" id="loginModal">
+  <div class="login-content">
+    <span class="login-close" id="closeLogin">&times;</span>
+    <h2>Se connecter</h2>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" placeholder="Votre e-mail">
+
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" placeholder="Votre mot de passe">
+
+    <div class="actions">
+      <label><input type="checkbox"> Souviens-toi de moi</label>
+      <a href="#">Mot de passe oublié ?</a>
+    </div>
+
+    <button>Se connecter</button>
+  </div>
+</div>
+
+<div class="presentation-section">
+  <div class="presentation-box">
+    <h2 class="presentation-title">Qui sommes-nous ?</h2>
+    <!-- <p class="presentation-desc">Un message inspirant ou une présentation courte de votre projet.</p> -->
+  </div>
+</div>
+
+
+<section class="bloc-identite">
+  <div class="contenu-identite">
+    <div class="texte-identite">
+      <h2 class="titre-identite">Qui sommes-nous ?</h2>
+      <p class="desc-identite">
+        Modern Construction, acteur majeur de la construction et des infrastructures en RDC,
+        bénéficie de plus de 10 ans d’expérience dans des projets emblématiques.
+      </p>
+      <a href="#" class="btn-identite">Contactez-nous</a>
+    </div>
+    <div class="photo-identite">
+      <img src="image/mad/454648_3 - Photo.jpg" alt="Équipe" class="img-identite">
+    </div>
+  </div>
+</section>
+
+<script>
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      header.classList.add("visible-header");
+    } else {
+      header.classList.remove("visible-header");
+    }
+  });
+</script>
+
+<!-- // Se connecter -->
+<script>
+  document.getElementById('openLogin').addEventListener('click', () => {
+    document.getElementById('loginModal').style.display = 'flex';
+  });
+
+  document.getElementById('closeLogin').addEventListener('click', () => {
+    document.getElementById('loginModal').style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === document.getElementById('loginModal')) {
+      document.getElementById('loginModal').style.display = 'none';
+    }
+  });
+  </script>
+ 
+   <div style="height: 180px;"></div>
+</section>
+        <!-- About section -->
+        <!-- <section class="about-section">
+            <div class="section-content">
+                <div class="about-details">
+                    <h2 class="section-title">Moderne Architecture Design (MAD)</h2>
+                    <p class="text"></p>
+                </div>
+            </div>
+        </section> -->
+ <main>
+
+   <div style="height: 140px;"></div>
+
+  
+<!-- 
+<div class="diapo-background">
+  <div class="diapo-slide slide1"></div>
+   <div class="diapo-slide slide2"></div>
+  <div class="diapo-slide slide3"></div> 
+</div> -->
+
+
+        <!-- Présentation -->
+        <section class="about-section">
+  <div class="about-card">
+    <h2 class="about-title">Qui sommes-nous ?</h2>
+    <p class="about-text">Moderne Architecture Design (MAD) est une société d’architecture et de design basée à Kinshasa, fondée par deux passionnés: Shukuru MUBALAMA Dieum et Édouard MUTAYONGWA Santos...</p>
+    <p class="about-text">Chez MAD, nous croyons que chaque projet architectural est une expression unique de vision, de créativité et de précision...</p>
+  </div>
+
+  <div class="about-card">
+    <h2 class="about-title">Mission</h2>
+    <p class="about-text">Concevoir des espaces modernes, esthétiques et fonctionnels en alliant innovation architecturale, durabilité et respect des normes.</p>
+  </div>
+
+  <div class="about-card">
+    <h2 class="about-title">Vision</h2>
+    <p class="about-text">Être une référence dans le domaine de l’architecture contemporaine en Afrique centrale...</p>
+  </div>
+
+  <div class="about-card">
+    <h2 class="about-title">Nos valeurs</h2>
+    <ul class="about-list">
+      <li>Créativité</li>
+      <li>Fiabilité</li>
+      <li>Respect des délais</li>
+      <li>Excellence</li>
+    </ul>
+  </div>
+
+  <div class="about-card">
+
+<h2 class="about-title">Services offerts</h2>
+    <ul class="about-list">
+      <li>Conception et gestion de projet</li>
+      <li>Design intérieur et extérieur</li>
+      <li>Construction, rénovation</li>
+      <li>Vente de matériaux</li>
+      <li>Formation & consultation</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="qui-sommes-nous-section">
+
+  <div class="qui-sommes-nous-item left-img">
+    <img src="image/mad/1_3 - Photo.jpg" alt="Qui sommes-nous" />
+    <div class="qui-sommes-nous-text">
+      <h2>Qui sommes-nous ?</h2>
+      <p>
+        Moderne Architecture Design (MAD) est une société d’architecture et de design basée à Kinshasa, fondée par deux passionnés: Shukuru MUBALAMA Dieum et Édouard MUTAYONGWA Santos...
+      </p>
+      <p>
+        Chez MAD, nous croyons que chaque projet architectural est une expression unique de vision, de créativité et de précision...
+      </p>
+      <!-- <p>
+        En collaboration avec des marques de renommée mondiale, telles que Hilton et Mercedes Benz, Modern Construction Congo trace une voie bien définie pour introduire le luxe et un style de vie résolument moderne à travers des projets résidentiels et commerciaux ambitieux qui transforment la profondeur du paysage urbain de Kinshasa.
+      </p> -->
+      <a href="#" class="btn-contact">Contactez-nous</a>
+    </div>
+  </div>
+
+  <div class="qui-sommes-nous-item right-img">
+    <img src="image/mad/render 123_1 - Photo.jpg" alt="Notre carrière" />
+    <div class="qui-sommes-nous-text">
+      <h2>NOTRE CARRIÈRE</h2>
+      <p>
+        Entreprise de construction de premier plan au Congo, l'organisation se distingue par son engagement envers de bonnes pratiques commerciales et une culture positive et éthique. Cette éthique a permis d'établir la confiance des clients. La force de l'entreprise réside dans sa capacité à identifier et à satisfaire les attentes de ses employés, ce qui se traduit par une meilleure planification de carrière et une croissance accrue.
+      </p>
+      <a href="#" class="btn-contact">Contactez-nous</a>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  // Script pour ajouter la classe visible quand chaque bloc est dans la fenêtre
+  function revealOnScroll() {
+    const items = document.querySelectorAll('.qui-sommes-nous-item');
+    const windowHeight = window.innerHeight;
+    items.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      if(rect.top < windowHeight - 100) {
+        item.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+
+
+
+
+
+
+
+<!-- Font Awesome -->
+<section class="stats-section">
+    <!-- <h2 class="section-title">Statistiques</h2> -->
+    <div class="stats-container">
+      
+        <div class="stat-box">
+            <i class="fas fa-layer-group"></i>
+            <h2 class="counter" data-target="50">0</h2>
+            <p>COLLABORATEURS</p>
+        </div>
+        <div class="stat-box">
+            <i class="fas fa-project-diagram"></i>
+            <h2 class="counter" data-target="150">0</h2>
+            <p>CLIENTS SATISFAITS</p>
+        </div>
+        <div class="stat-box">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h2 class="counter" data-target="10">0</h2>
+            <p>PROJETS LIVRES / MOIS</p>
+        </div>
+        <div class="stat-box">
+            <i class="fas fa-user-graduate"></i>
+            <h2 class="counter" data-target="3">0</h2>
+            <p>CERTIFICATIONS</p>
+        </div>
+        <!-- <div class="stat-box">
+            <i class="fas fa-school"></i>
+            <h2 class="counter" data-target="236">0</h2>
+            <p>Classes</p>
+        </div> -->
+    </div>
+</section>
+
+
+<!-- Notre equipes -->
+<div class="equipe-section">
+  <h2>Notre Équipe</h2>
+  <div class="profiles">
+    
+
+    <div class="profile-card">
+      <img src="image/key/IMG-20240606-WA0042.jpg" alt="Jean Makiese" class="profile-photo">
+      <h4 class="profile-name">Ketsia Key</h4>
+    </div>
+
+    <div class="profile-card">
+      <img src="image/key/Screenshot_20240901-210032_1.png" alt="Jean Makiese" class="profile-photo">
+      <h4 class="profile-name">Arly Arlette</h4>
+    </div>
+
+    <div class="profile-card">
+      <img src="image/key/WhatsApp Image 2025-02-16 à 14.37.54_26f86411.jpg" alt="Jean Makiese" class="profile-photo">
+      <h4 class="profile-name">Dan Amisi</h4>
+    </div>
+
+    <div class="profile-card">
+      <img src="image/key/IMG-20240401-WA0029.jpg" alt="Jean Makiese" class="profile-photo">
+      <h4 class="profile-name">Dayanah Amisi</h4>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="Damas-timeline">
+  <h2>Notre parcours architectural</h2>
+  <div class="Damas-timeline-container">
+    <div class="Damas-timeline-item">
+      <span class="Damas-date">2016</span>
+      <div class="Damas-content">
+        <h4>HJ Hôpitaux</h4>
+        <p>Kintambo, Kinshasa</p>
+      </div>
+    </div>
+    <div class="Damas-timeline-item">
+      <span class="Damas-date">2021</span>
+      <div class="Damas-content">
+        <h4>Centre CONCO</h4>
+        <p>Wagenia, Kinshasa</p>
+      </div>
+    </div>
+    <div class="Damas-timeline-item">
+      <span class="Damas-date">2023</span>
+      <div class="Damas-content">
+        <h4>Hôtel Hilton</h4>
+        <p>Gombe, Kinshasa</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .Damas-timeline {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .Damas-timeline h2 {
+    color: #21105f;
+    margin-bottom: 40px;
+  }
+  .Damas-timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    padding-left: 30px;
+  }
+  .Damas-timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ff5e62;
+  }
+  .Damas-timeline-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+  }
+  .Damas-date {
+    font-weight: bold;
+    color: #ff5e62;
+    background: #fff;
+    border: 2px solid #ff5e62;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    z-index: 2;
+  }
+  .Damas-content {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    flex: 1;
+  }
+</style>
+
+<style>
+ .Damas-temoignages {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .Damas-temoignages h2 {
+      color: black;
+      margin-bottom: 30px;
+    }
+    .Damas-temoignages blockquote {
+      max-width: 600px;
+      margin: auto;
+      background: #fdf2ec;
+      padding: 30px;
+      border-radius: 10px;
+      font-style: italic;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+</style>
+
+
+  <div class="services">
+    <div class="service">
+      <i class="fas fa-pencil-ruler"></i>
+      <h3>Études et Conception</h3>
+      <p>Espaces uniques et audacieux adaptés à leur environnement.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-user-cog"></i>
+      <h3>Conseil et Expertise</h3>
+      <p>Solutions sur mesure alliant attentes et contraintes techniques.</p>
+    </div>
+    <!-- <div class="service">
+      <i class="fas fa-tools"></i>
+      <h3>Rénovation des bâtiments</h3>
+      <p>Transformation de bâtiments avec respect du patrimoine.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-hands-helping"></i>
+      <h3>Assistance technique</h3>
+      <p>Accompagnement de la conception à la réalisation.</p>
+    </div> -->
+    <div class="service">
+      <i class="fas fa-couch"></i>
+      <h3>Design intérieur</h3>
+      <p>Espaces élégants, confortables et bien pensés.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-city"></i>
+      <h3>Aménagement urbain</h3>
+      <p>Création de lieux extérieurs vivants et accueillants.</p>
+    </div>
+  </div>
+
+
+<style>
+      .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: #fff;
+      border-radius: 8px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid #eee;
+    }
+    .service i {
+      font-size: 40px;
+      color: #444;
+      margin-bottom: 15px;
+      transition: color 0.3s;
+    }
+    .service h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #222;
+    }
+    .service p {
+      color: #555;
+      font-size: 14px;
+    }
+    .service:hover {
+       transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .service:hover i {
+      color: #007bff;
+    }
+  </style>
+
+
+
+
+
+
+
+
+        <!-- Language selector -->
+        <!-- <div id="languageSelector">
+            <select id="language" onchange="changeLanguage()">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="sw">Kiswahili</option>
+                <option value="es">Español</option>
+                <option value="pt">Português</option>
+            </select>
+        </div>
+
+        <h1 id="title">Bienvenue sur notre site web</h1>
+        <p id="description">Ceci est un site web simple pour montrer comment changer la langue.</p>
+        <p id="content">Le contenu de ce site changera en fonction de la langue choisie.</p> -->
+    </main>
+
+<footer class="footer-modern">
+  <div class="footer-container">
+
+    <div class="footer-logo-section">
+      <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="LAD Architecture" class="footer-logo" />
+      <p>
+        LAD Architecture, acteur majeur de la construction et de l'aménagement en RDC, bénéficie d'une expérience de plus de 10 ans. Nous redéfinissons les standards de qualité à Kinshasa et à travers le pays.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h4>Liens</h4>
+      <a href="about.html">À propos</a>
+      <a href="service.html">Services</a>
+      <a href="projet.html">Projets</a>
+      <a href="réalisation.html">Réalisations</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Réalisations</h4>
+      <a href="#">HÔPITAUX HJ</a>
+      <a href="#">HÔTEL HILTON</a>
+      <a href="#">HÔPITAL MAMA YEMO</a>
+      <a href="#">SUPREME AUTOMOBILE</a>
+      <a href="#">CENTRE CONCO</a>
+      <a href="#">ROUTE KINSHASA</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Projets</h4>
+      <a href="#">La Cité-Jardin</a>
+      <a href="#">RÉSIDENCE PALM</a>
+      <a href="#">SKY 180</a>
+      <a href="#">La Grande Résidence</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone-alt"></i> +243 979 143 408</p>
+      <p><i class="fas fa-envelope"></i> danielamisi@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 LAD Architecture. Tous droits réservés.</p>
+  </div>
+
+</footer> 
+
+
+
+<!-- Bouton WhatsApp -->
+<a href="https://wa.me/243979143408?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations" class="whatsapp-float" target="_blank" aria-label="Contact WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const box = document.querySelector(".fade-in");
+    if (!box) return;
+    const boxTop = box.getBoundingClientRect().top;
+    const triggerPoint = window.innerHeight * 0.9;
+    if (boxTop < triggerPoint) {
+      box.classList.add("show");
+    }
+  });
+</script>
+<script>
+  window.addEventListener("scroll", function () {
+    const box = document.querySelector(".fade-in");
+    if (!box) return;
+    const boxTop = box.getBoundingClientRect().top;
+    const triggerPoint = window.innerHeight * 0.9;
+    if (boxTop < triggerPoint) {
+      box.classList.add("show");
+    }
+  });
+</script>
+<script>
+  
+  // statistique
+     const counters = document.querySelectorAll('.counter');
+  let started = false;
+
+  function startCounters() {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const increment = target / 200;
+
+      const updateCount = () => {
+        if (count < target) {
+          count += increment;
+          counter.innerText = Math.ceil(count);
+          setTimeout(updateCount, 10);
+        } else {
+          counter.innerText = target >= 1000000
+            ? "+" + (target / 1000000).toFixed(1) + "M"
+            : target;
+        }
+      };
+      updateCount();
+    });
+  }
+
+  window.addEventListener('scroll', () => {
+    const statsSection = document.querySelector('.stats-section');
+    const sectionTop = statsSection.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (!started && sectionTop < windowHeight - 100) {
+      startCounters();
+      started = true;
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("menu-toggle-button");
+    const navMenu = document.getElementById("nav-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      toggleBtn.classList.toggle("close-icon");
+    });
+  });
+</script>
+
+    <!-- Scroll top -->
+    <button id="scrollToTopBtn" class="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

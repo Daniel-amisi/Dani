@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog de Mub Architecture - Kinshasa">
+  <title>Mub Architecture - Blog</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="shortcut icon" href="Image/images (2).jpeg">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    
+    section.blog {
+      padding: 4rem 1rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .article {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+    }
+    .article img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .article h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .article p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .article a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #007acc;
+      font-weight: bold;
+    }
+    footer {
+      background: #112244;
+      color: #fff;
+      padding: 2rem 1rem;
+    }
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .footer-links a {
+      display: block;
+      color: #ccc;
+      margin-bottom: 0.5rem;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 1rem;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 50%;
+      font-size: 24px;
+      z-index: 1000;
+    }
+    @media (max-width: 768px) {
+      .articles {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <img src="image/mad/AZQSDFGH_1 - Photo.jpg" alt="Logo" height="50">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="projet.html">Projet</a></li>
+        <li><a href="réalisation.html">Réalisation</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Blog Content -->
+  <main>
+    <section class="blog">
+      <h2>Notre Blog</h2>
+      <div class="articles">
+        <div class="article belange">
+          <img src="image/image_001-0324c7df.jpeg" alt="Maison moderne">
+          <h3>Comment bien concevoir une maison moderne ?</h3>
+          <p>Choix de terrain, orientation, matériaux durables... les clés pour un projet architectural réussi.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/image_019-e12a220e.jpeg" alt="Tendance design">
+          <h3>Tendances design intérieur 2025</h3>
+          <p>Couleurs, matières et formes en vogue dans les architectures modernes africaines.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/images (1).jpeg" alt="Chantier Goma">
+          <h3>Zoom sur notre chantier à Goma</h3>
+          <p>Un projet résidentiel ambitieux au cœur du Kivu, en pleine transformation urbaine.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/materials.jpg" alt="Matériaux écologiques">
+          <h3>Matériaux et technologies innovantes</h3>
+          <p>Énergie solaire, béton écologique, smart homes... les nouvelles tendances de construction.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/avant-apres.jpg" alt="Avant / Après">
+          <h3>Avant / Après : rénovations remarquables</h3>
+          <p>Comparatifs visuels des projets rénovés : de la vision à la réalisation concrète.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/chantier-zoom.jpg" alt="Zoom Chantier">
+          <h3>Zoom sur un chantier</h3>
+          <p>Défis, plans, contraintes techniques surmontées dans un projet clé à Kinshasa.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/environnement.jpg" alt="Urbanisme">
+          <h3>Urbanisme & Environnement</h3>
+          <p>Intégrer la nature et les espaces verts dans l'urbanisation de la capitale congolaise.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/interview.jpg" alt="Témoignage client">
+          <h3>Interviews & Témoignages</h3>
+          <p>Paroles de clients et collaborateurs sur leur expérience avec Mub Architecture.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+        <div class="article belange">
+          <img src="image/equipe.jpg" alt="Vie du cabinet">
+          <h3>Vie du cabinet</h3>
+          <p>Événements, recrutements, distinctions : la vie interne de notre cabinet d’architectes.</p>
+          <a href="#">Lire plus →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo-section">
+        <img src="image/mad/1234_1 - Photo_4 - Photo_3 - Photo.jpg" alt="Logo" class="footer-logo" width="120">
+        <p>LAD Architecture, acteur majeur de la construction et de l'aménagement en RDC, bénéficie d'une expérience de plus de 10 ans.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens</h4>
+      
+        <a href="projet.html">Nos Projets</a>
+        <a href="réalisation.html">Nos Réalisations</a>
+        <a href="blog.html">Blog</a>
+        
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone-alt"></i> +243 979 143 408</p>
+        <p><i class="fas fa-envelope"></i> danielamisi@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LAD Architecture. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/243979143408" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
